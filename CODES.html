@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Profil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts pour Roboto et Caveat Brush -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Caveat+Brush&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome pour les icônes des réseaux sociaux -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+<body>
+    <style>
+        body{
+         background-color: #666;
+        }
+        
+        .tools-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        
+        .tools-icons img {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .tools h2{
+          display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 50px;
+            height: 50px;
+        }
+        
+            .profile-section {
+              background-color: #f8f9fa;
+              padding: 20px;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              margin-bottom: 20px;
+            }
+        
+            .profile-header {
+              text-align: center;
+              margin-bottom: 20px;
+              font-weight: bold;
+              text-transform: uppercase;
+            }
+        
+            .profile-text {
+              text-align: justify;
+            }
+        
+            .profile-image {
+              max-width: 100%;
+              height: auto;
+              border-radius: 10px;
+            }
+        
+            /* Ligne horizontale décorative sous le titre */
+            .underline {
+              width: 50px;
+              height: 3px;
+              background-color: #000;
+              margin: 0 auto 20px auto;
+            }
+        
+        
+        
+        
+        
+        
+            body {
+              background-color: #cec0c0;
+              font-family: 'Roboto', sans-serif;
+            }
+        
+            /* Style pour le texte principal "Salut ! Je suis Ramata Mamadou Thioye" */
+            .header-text {
+              color: #D48837;
+              font-family: 'Roboto', sans-serif;
+              font-size: 36px;
+              font-weight: 700;
+            }
+        
+            /* Style pour les sous-titres et le texte complémentaire */
+            .subtext, .job-title {
+              color: #1D1D49;
+              font-family: 'Caveat Brush', cursive;
+              font-size: 24px;
+            }
+        
+            /* Style de l'image de profil */
+          
+            /* Style des icônes de réseaux sociaux */
+            .social-icons a {
+              color: #1D1D49;
+              font-size: 24px;
+              margin: 0 10px;
+            }
+        
+            /* Style du bouton de téléchargement de CV */
+            .btn-cv {
+              background-color: #f8f9fa;
+              border: 2px solid #D48837;
+              color: #D48837;
+              padding: 10px 20px;
+              font-size: 18px;
+              border-radius: 25px;
+              text-decoration: none;
+            }
+        
+            .btn-cv:hover {
+              background-color: #D48837;
+              color: white;
+            }
+        
+        
+        
+        
+        
+        
+        
+           
+            /* Style de la section */
+            .services-section {
+              padding: 50px 0;
+              text-align: center;
+            }
+        
+            .services-section h2 {
+              font-size: 36px;
+              font-weight: bold;
+            }
+        
+            .services-section p {
+              font-size: 16px;
+              color: #666;
+              margin-bottom: 40px;
+            }
+        
+            .service-card {
+              background-color: #fff;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              padding: 20px;
+              text-align: center;
+              transition: transform 0.3s;
+            }
+        
+            .service-card:hover {
+              transform: translateY(-10px);
+            }
+        
+            .service-icon {
+              font-size: 40px;
+              color: #1D1D49;
+              border: 3px solid #1D1D49;
+              border-radius: 50%;
+              padding: 20px;
+              margin-bottom: 20px;
+            }
+        
+            .service-title {
+              font-size: 20px;
+              font-weight: bold;
+              margin-bottom: 15px;
+            }
+        
+            .service-desc {
+              font-size: 14px;
+              color: #666;
+            }
+        
+        
+        
+            .progress-bar-custom {
+                background-color: #343a40;
+              }
+          
+              .circle {
+                width: 100px;
+                height: 100px;
+                background-color: #e9ecef;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                font-weight: bold;
+                font-size: 1.2rem;
+              }
+          
+              .exp-text {
+                text-align: center;
+                margin-top: 10px;
+              }
+          
+              .exp-container {
+                margin-top: 50px;
+              }
+          
+              .exp-item {
+                margin-bottom: 40px;
+              }
+        
+        
+        
+              /* Réinitialisation des marges et des espacements par défaut */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none; /* Supprime le soulignement des liens */
+            border: none; /* Supprime les bordures par défaut */
+            outline: none; /* Supprime le contour des éléments */
+            scroll-behavior: smooth; /* Ajoute un défilement fluide pour les liens d'ancrage */
+            font-family: "Poppins", sans-serif; /* Définit la police */
+        }
+        
+        /* Variables CSS */
+        :root {
+            --bg-color: #b9b2b2; /* Couleur de fond principale */
+            --second-bg-color: #fefefe; /* Couleur de fond secondaire (ajoutez une valeur ici) */
+            --text-color: #0d0d35; /* Couleur du texte (ajoutez une valeur ici) */
+        }
+        /* Définition de la taille de police par défaut */
+        html {
+            font-size: 40%; /* Définit la taille de police à 60% de la taille par défaut du navigateur */
+        }
+        
+        /* Empêche le débordement horizontal de la page */
+        body {
+            overflow-x: hidden; /* Cache tout débordement horizontal */
+            background: var(--second-bg-color); /* Applique la couleur de fond définie dans les variables CSS */
+            color: var(--text-color); /* Applique la couleur du texte définie dans les variables CSS */
+        }
+        
+        /* Styles pour l'en-tête */
+        header {
+            position: fixed; /* Rend l'en-tête fixe en haut de la page */
+            top: 0; /* Aligne l'en-tête en haut */
+            left: 0; /* Aligne l'en-tête à gauche */
+            width: 100%; /* Prend toute la largeur de la fenêtre */
+            padding: 4rem 12%; /* Ajoute du remplissage vertical de 4rem et horizontal de 12% */
+            background: rgba(0, 0, 0, 0.3); /* Couleur de fond noire avec transparence */
+            backdrop-filter: blur(10px); /* Applique un flou de 10 pixels à l'arrière-plan derrière l'en-tête */
+            display: flex; /* Utilise le modèle de boîte flex pour l'en-tête */
+            justify-content: space-between; /* Espacement égal entre les éléments enfants */
+            align-items: center; /* Centre les éléments enfants verticalement */
+            z-index: 5; /* Définit l'ordre d'empilement pour s'assurer que l'en-tête se superpose aux autres éléments */
+        }
+        /* Style pour le logo (si utilisé avec une classe spécifique) */
+        .logo span {
+            text-shadow: 0 0 25px var(--main-color); /* Ajoute une ombre au texte du logo */
+            --text-color: #0d0d35; /* Couleur du texte (ajoutez une valeur ici) */
+            
+        }
+        .logo{
+            font-size: 160%; 
+        }
+        
+        /* Styles pour la barre de navigation */
+        .navbar a {
+            font-size: 1.8rem; /* Définit la taille de police des liens dans la barre de navigation */
+            color: var(--text-color); /* Applique la couleur du texte définie dans les variables CSS */
+            margin-left: 4rem; /* Ajoute une marge à gauche des liens */
+            font-weight: 500; /* Définit le poids de la police (semi-gras) */
+            transition: 0.3s ease; /* Ajoute une transition douce lors du changement d'état */
+            border-bottom: 3px solid transparent; /* Ajoute une bordure inférieure invisible (pour l'effet de survol) */
+          }
+        
+        
+        
+          /* Styles pour les liens au survol et l'élément actif dans la barre de navigation */
+        .navbar a:hover,
+        .navbar a.active {
+            color: var(--main-color); /* Change la couleur du texte pour correspondre à la couleur principale */
+            border-bottom: 3px solid var(--main-color); /* Ajoute une bordure inférieure colorée */
+        }
+        
+        /* Styles pour l'icône du menu */
+        #menu-icon {
+            font-size: 3.6rem; /* Définit la taille de police de l'icône du menu */
+            color: var(--main-color); /* Applique la couleur principale à l'icône du menu */
+            display: none; /* Masque l'icône du menu par défaut */
+        
+          }
+        
+        
+        
+          .text-center{
+            margin-left: 50px;
+            font-size: 30px;
+          }
+          realisation-heading{
+        
+            margin-left: 50px;
+            font-size: 30px;
+            margin-top: 20px;
+          }
+          
+        
+          .container {
+            background-color: #FFFFFF;
+        
+            margin-top: 100px;
+          }
+          .profile-img{
+            height: 400px;
+            width: 400px;
+            margin-top: -10px;
+            margin-left: 40px;
+
+          }
+          .col-md-6{
+            margin-top: 20px;
+          }
+          .container {
+            background-color: #d4d8db;
+
+          }
+         .ser{
+            width: 1200px;
+            margin-left: 40px;
+           
+         }
+
+         .profile-section {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #f8f9fa;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .profile-section h2 {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .profile-section hr {
+      width: 60px;
+      height: 2px;
+      background-color: #000;
+      border: none;
+      margin: 10px auto;
+    }
+    .profile-section img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    .profile-text {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .textf{
+        margin-left: 5px;
+        display: flex;
+    }
+   .profile-section{
+    width: 900px;
+   }
+    
+    
+
+          </style>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </head>
+        <body>
+        
+        
+        
+        
+          <header class="header">
+            <a href="#home" class="logo">R.M.T <span></span></a>
+        
+            <i class='bx bx-menu' id="menu-icon"></i>
+        
+            <nav class="navbar">
+              <a href="#ACCEUIL" class="#ACCEUIL">ACCEUIL</a>
+              <a href="#A PROPOS ">A PROPOS</a>
+              <a href="#ser">Services</a>
+              <a href="#CONTACT">CONTACT</a>
+              <a href="#REALISATION ">REALISATION </a>
+              <a href="#trans  ">COMPETENCES </a>
+            </nav>
+          </header>
+        
+        
+        
+        
+        
+          
+        
+          <div class="container text-center py-5">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <!-- Texte principal -->
+                <h1 class="header-text">Salut !<br>Je suis Ramata Mamadou Thioye</h1>
+                <p class="subtext">Référente digitale passionnée par le monde du digital et de la stratégie en ligne. Avec une formation solide, j'aide les entreprises à maximiser leur présence numérique et à atteindre leurs objectifs.</p>
+                <h2 class="job-title">RÉFÉRENTE DIGITALE</h2>
+        
+                <!-- Icônes des réseaux sociaux -->
+                <div class="social-icons mt-3">
+                  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+        
+                <!-- Bouton pour télécharger le CV -->
+                <div class="mt-4">
+                  <a href="https://drive.google.com/drive/folders/1f3oFwFUmamtP_eXX_wZtROx80HAwLsNK" class="btn btn-cv">Télécharger mon CV</a>
+                </div>
+              </div>
+        
+              <!-- Image de profil -->
+              <div class="col-md-4">
+                <img src="Ellipse 1.png" alt="Ramata Mamadou Thioye" class="profile-img">
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="container">
+            <div class="profile-section">
+              <h2>MON PROFIL</h2>
+              <hr>
+              <div class="row align-items-center">
+                <!-- Image à gauche -->
+                <div class="col-md-4">
+                  <img src="IMG RAMATA.jpg" alt="Photo de profil">
+                </div>
+                <!-- Texte à droite -->
+                 <div class="textf">
+                <div class="col-md-8">
+                  <h3>À propos</h3>
+                  <p class="profile-text">
+                    Je m'appelle <strong>RAMATA MAAMDOU THIOYE </strong>, Référente digitale passionnée par le monde du digital et de la stratégie en ligne. Avec une formation solide, j'aide les entreprises à maximiser leur présence numérique et à atteindre leurs objectifs.
+                    Mon approche repose sur l'analyse des besoins spécifiques de chaque projet afin d'offrir des solutions sur mesure qui combinent innovation et efficacité.
+                  </p>
+                </div>
+               </div>
+              </div>
+            </div>
+          </div>
+          
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+         
+
+          
+        
+          <!-- Bootstrap JS -->
+        <div class=" ser">
+            <section class="services-section">
+                <div class="container">
+                  <!-- Titre de la section -->
+                  <h2>SERVICES</h2>
+                  <p>Nous offrons des solutions innovantes pour optimiser votre présence en ligne.</p>
+            
+                  <!-- Grille des services -->
+                  <div class="row">
+                    <div class="col-md-4 mb-4">
+                      <div class="service-card">
+                        <i class="fas fa-desktop service-icon"></i>
+                        <h3 class="service-title">MARKETING DIGITALE</h3>
+                        <p class="service-desc">Nous créons une stratégie digitale pour vous maximiser votre présence en ligne et atteindre vos objectifs de croissance.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <div class="service-card">
+                        <i class="fas fa-code service-icon"></i>
+                        <h3 class="service-title">WEB DEVELOPMENT</h3>
+                        <p class="service-desc">Je propose des services de développement web, allant de la conception de sites vitrines à la création de plateformes interactives.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <div class="service-card">
+                        <i class="fas fa-bullhorn service-icon"></i>
+                        <h3 class="service-title">COMMUNICATION</h3>
+                        <p class="service-desc">Je propose des services de stratégie de communication digitale, création de contenu, et analyse de performances pour renforcer la présence des marques sur le web.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <div class="service-card">
+                        <i class="fas fa-pen-alt service-icon"></i>
+                        <h3 class="service-title">CREATION DE CONTENU</h3>
+                        <p class="service-desc">Je crée des articles de blog, des publications sur les réseaux sociaux, et des infographies percutantes pour interagir efficacement avec les marques.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <div class="service-card">
+                        <i class="fas fa-paint-brush service-icon"></i>
+                        <h3 class="service-title">GRAPHIC DESIGN</h3>
+                        <p class="service-desc">Design de sites web, logos, affiches et autres visuels pour optimiser l'impact de votre image de marque.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <div class="service-card">
+                        <i class="fas fa-chart-line service-icon"></i>
+                        <h3 class="service-title">MARKETING SERVICES</h3>
+                        <p class="service-desc">Je fournis des services dans la stratégie marketing, la gestion des réseaux sociaux, et l'optimisation des performances pour maximiser les conversions.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            
+             
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+              <div class="tras">
+                <div class="container mt-5">
+                  <!-- Compétences Transversales Section -->
+                  <h2 class="text-center mb-4"  >Compétences Transversales</h2>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h6>Travail en équipe</h6>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                          aria-valuemin="0" aria-valuemax="100">85%</div>
+                      </div>
+              
+                      <h6 class="mt-3">Autonomie</h6>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                          aria-valuemin="0" aria-valuemax="100">80%</div>
+                      </div>
+              
+                      <h6 class="mt-3">Gestion du temps</h6>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                          aria-valuemin="0" aria-valuemax="100">90%</div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <h6>Résolution de problèmes</h6>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                          aria-valuemin="0" aria-valuemax="100">75%</div>
+                      </div>
+              
+                      <h6 class="mt-3">Productivité</h6>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                          aria-valuemin="0" aria-valuemax="100">85%</div>
+                      </div>
+              
+                      <h6 class="mt-3">Créativité</h6>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100">70%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="container">
+                    <!-- Titre Réalisations -->
+                    <div class="realisation-heading">
+                        <h2>RÉALISATIONS</h2>
+                    </div>
+                    <div class="realisation-subtitle">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <hr style="width: 50px; margin: 0 auto; border-top: 3px solid #007bff;">
+                    </div>
+            
+                    <!-- Cartes de réalisations -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- Carte 1 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="reseau.png" class="card-img-top" alt="Réseau des Alumni">
+                                <div class="card-body">
+                                    <h5 class="card-title">Projet resass</h5>
+                                    <p class="text-muted">Design / 18 Sep 2024</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="icon-add">+</div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Carte 2 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="plastcollect.png" class="card-img-top" alt="Projet PlastCollect">
+                                <div class="card-body">
+                                    <h5 class="card-title">PROJET PLASTCOLLECT</h5>
+                                    <p class="text-muted">Web master / 18 Sep 2024</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="icon-add">+</div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Carte 3 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="rmt.png" class="card-img-top" alt="branding personnel">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mavrito Lana Dere</h5>
+                                    <p class="text-muted">Web Design / 18 Sep 2018</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="icon-add">+</div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Carte 4 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="moringa glow.png" class="card-img-top" alt="projet communication digital">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bindo Laro Cado</h5>
+                                    <p class="text-muted">Web Design / 18 Sep 2018</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="icon-add">+</div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Carte 5 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="branding.png" class="card-img-top" alt="Campagne de Notoriété">
+                                <div class="card-body">
+                                    <h5 class="card-title">Campagne de Notoriété</h5>
+                                    <p class="text-muted">Gestion de Projets / 19 Sep 2024</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="icon-add">+</div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Carte 6 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="Capture d’écran (419).png" class="card-img-top" alt="Création Portfolio Promo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Création Portfolio de la Promo</h5>
+                                    <p class="text-muted">Web Master / 18 Sep 2024</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="icon-add">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js
+            
+      
+      
+      
+      
+      
+             
+            
+            
+            
+            
+            
+
+      
+        
+        
+        
+
+  
+</body>
+</html>
